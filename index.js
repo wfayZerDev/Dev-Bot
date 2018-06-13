@@ -17,7 +17,7 @@ bot.on('message', message => {
     }
 
 
-    if (message.content === "!info"){
+    if (message.content === prefix + "info"){
         var help_embed = new Discord.RichEmbed()
         .setColor('0x6F40A4')
         .setTitle("Information")
