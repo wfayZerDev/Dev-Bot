@@ -5,7 +5,7 @@ var prefix = ("?");
 
 
     bot.on('ready', () => {
-        bot.user.setPresence({ game: { name: '[?help] | Prefix', type: 0} });
+        bot.user.setPresence({ game: { name: '[?help] | By fayZer', type: 0} });
     
     });
 
@@ -48,4 +48,11 @@ bot.on('message', function(message){
         message.reply('💻  Le site est :http://forumtictacrp.mtxserv.fr/  💻')
     }
 })   
+           
+
+
+
+
+
+ 
 bot.login(process.env.TOKEN);
