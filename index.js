@@ -15,9 +15,10 @@ bot.on('message', message => {
         message.reply("troll!!!");
         console.log('troll troll');
     }
+})
 
-
-    if (message.content === prefix + "info"){
+bot.on('message', message => {
+    if (message.content === "?info"){
         var help_embed = new Discord.RichEmbed()
         .setColor('0x6F40A4')
         .setTitle("Information")
@@ -49,6 +50,9 @@ bot.on('message', function(message){
     }
 })   
            
+
+
+
 
 
 
