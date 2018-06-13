@@ -11,17 +11,20 @@ var prefix = ("?");
 
 
 bot.on('message', message => {
-    if(message.content ==="troll"){
+    if(message.content === "troll"){
         message.reply("troll!!!");
         console.log('troll troll');
     }
 
 
-    if (message.content === prefix + "help"){
+    if (message.content === prefix + "info"){
         var help_embed = new Discord.RichEmbed()
         .setColor('0x6F40A4')
-        .addField("💻Le site : http://forumtictacrp.mtxserv.fr/  💻")
-        .addField("🖥  Ip du serveur Tic-TacRp : 91.121.33.3 !  🖥")
+        .setTitle("Information")
+        .addField("💻Le site : http://forumtictacrp.mtxserv.fr/  💻", "Site Web TicTac Rolplay")
+        .addField("🖥  Ip du serveur Tic-TacRp : 91.121.33.3 !  🖥", "Ip du serveur")
+        .addField("WorkShop : https://steamcommunity.com/sharedfiles/filedetails/?id=1124791621", "Colection du serveur")
+        .addField("Lien")
     message.channel.sendEmbed(help_embed)
         console.log('help');
     }
@@ -45,17 +48,4 @@ bot.on('message', function(message){
         message.reply('💻  Le site est :http://forumtictacrp.mtxserv.fr/  💻')
     }
 })   
-           
-bot.on('message', function(message){
-    if (message.content === '?info'){
-        message.reply
-        ('*💻  Le site est : http://forumtictacrp.mtxserv.fr/  💻                                                                                🖥  Ip du serveur Tic-TacRp : 91.121.33.3 !  🖥*')
-    }
-})   
-
-
-
-
-
-
 bot.login(process.env.TOKEN);
