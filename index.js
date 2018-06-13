@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client()
-var prefix = ("?"); 
+var prefix = ("!"); 
 
 
 
@@ -34,23 +34,27 @@ bot.on('message', message => {
 
 
 bot.on('message', function(message){
-    if (message.content === '..tictac'){
+    if (message.content === '!tictac'){
         message.reply('🖥  Ip du serveur Tic-TacRp : 91.121.33.3 !  🖥  ')
     }
 })
 bot.on('message', function(message){
-    if (message.content === '..ip'){
+    if (message.content === '!ip'){
         message.reply('🖥  Ip du serveur Tic-TacRp : 91.121.33.3 !  🖥')
     }
 })
 bot.on('message', function(message){
-    if (message.content === '..site'){
+    if (message.content === '!site'){
         message.reply('💻  Le site est :http://forumtictacrp.mtxserv.fr/  💻')
     }
 })   
            
 
 
+
+
+
+ 
 
 
 
