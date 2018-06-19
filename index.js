@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client()
-var prefix = ("!"); 
+var prefix = ("?"); 
 
 
 
@@ -9,23 +9,15 @@ var prefix = ("!");
     
     });
 
-
 bot.on('message', message => {
-    if(message.content === "troll"){
-        message.reply("troll!!!");
-        console.log('troll troll');
-    }
-})
-
-bot.on('message', message => {
-    if (message.content === "?info"){
+    if (message.content === "?help"){
         var help_embed = new Discord.RichEmbed()
         .setColor('0x6F40A4')
         .setTitle("Information")
-        .addField("💻Le site : http://forumtictacrp.mtxserv.fr/  💻", "Site Web TicTac Rolplay")
-        .addField("🖥  Ip du serveur Tic-TacRp : 91.121.33.3 !  🖥", "Ip du serveur")
-        .addField("WorkShop : https://steamcommunity.com/sharedfiles/filedetails/?id=1124791621", "Colection du serveur")
-        .addField("Lien")
+        .addField("💻Le site : http://dev-store.fr/  💻", "Site Web Officiel")
+        .addField("?inv : invitation serveur")
+        .addField("?DKI : info sur la DKI")
+        .addField("Gang Gmod")
     message.channel.sendEmbed(help_embed)
         console.log('help');
     }
@@ -35,18 +27,18 @@ bot.on('message', message => {
 
 
 bot.on('message', function(message){
-    if (message.content === '!tictac'){
-        message.reply('🖥  Ip du serveur Tic-TacRp : 91.121.33.3 !  🖥  ')
+    if (message.content === '?inv'){
+        message.reply('Lien Discord : https://discord.gg/9kMebNt')
     }
 })
 bot.on('message', function(message){
-    if (message.content === '!ip'){
+    if (message.content === '?ip'){
         message.reply('🖥  Ip du serveur Tic-TacRp : 91.121.33.3 !  🖥')
     }
 })
 bot.on('message', function(message){
-    if (message.content === '!site'){
-        message.reply('💻  Le site est :http://forumtictacrp.mtxserv.fr/  💻')
+    if (message.content === '?site'){
+        message.reply('💻  Le site est :http://dev-store.fr/  💻')
     }
 })   
            
