@@ -15,6 +15,7 @@ bot.on('message', message => {
         .setColor('0x6F40A4')
         .setTitle("Information")
         .addField("💻Le site : http://dev-store.fr/  💻", "Site Web Officiel")
+        .addBlankField("test")
         .addField("?ranknsfw : Give un nouveau grade")
         .addField("?unrannknsfw : enleve le grade")
         .addField("Gang Gmod")
