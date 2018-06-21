@@ -15,8 +15,8 @@ bot.on('message', message => {
         .setColor('0x6F40A4')
         .setTitle("Information")
         .addField("💻Le site : http://dev-store.fr/  💻", "Site Web Officiel")
-        .addField("?inv : invitation serveur")
-        .addField("?DKI : info sur la DKI")
+        .addField("?ranknsfw : Give un nouveau grade")
+        .addField("?unrannknsfw : enleve le grade")
         .addField("Gang Gmod")
     message.channel.sendEmbed(help_embed)
         console.log('help');
