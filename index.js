@@ -2,12 +2,6 @@ const Discord = require('discord.js');
 const bot = new Discord.Client()
 var prefix = ("?"); 
 
-
-
-const Discord = require('discord.js');
-const bot = new Discord.Client()
-var prefix = ("?"); 
-
 bot.on('message', message => {
     if (message.content === "?serverinfo"){
     let sicon = message.guild.iconURL;
@@ -83,18 +77,6 @@ bot.on('message', function(message){
         message.reply('💻  Le site est :http://dev-store.fr/  💻')
     }
 })   
-
-
- 
-           
-
-
-
-
-
-
-
-
  
 
 
