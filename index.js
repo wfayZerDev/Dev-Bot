@@ -31,6 +31,9 @@ bot.on('message', message => {
     message.channel.send(botembed);
 }
 });
+
+
+
 module.exports.help = {
   name:"botinfo"
 }
@@ -61,15 +64,21 @@ bot.on('message', message => {
     }
 
 });
+bot.on('message', message => {
+    if (message.content === "?friman"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor('0x6F40A4')
+        .setTitle("▀Att")
+        .addField("On est occupé la xD mdr lol ok", "Merci d'attendre")
+    message.channel.sendEmbed(help_embed)
+        console.log('help');
+    }
+
+});
 
 bot.on('message', function(message){
     if (message.content === '?inv'){
-        message.reply('Lien Discord : https://discord.gg/9kMebNt')
-    }
-})
-bot.on('message', function(message){
-    if (message.content === '?ip'){
-        message.reply('🖥  Ip du serveur Tic-TacRp : 91.121.33.3 !  🖥')
+        message.reply('Lien Discord : https://discord.gg/pkwSCf')
     }
 })
 bot.on('message', function(message){
