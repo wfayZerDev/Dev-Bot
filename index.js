@@ -124,20 +124,7 @@ bot.on('message', message => {
     }
 
 });
- 
 
-bot.on('message', message => {
-    if (message.content === ">score"){
-        var help_embed = new Discord.RichEmbed()
-        .setColor("#15f153")
-        .setTitle("|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| Score |̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| ")
-        .addField("France", "-> 2")
-        .addField("Croatie", "-> 1")
-    message.channel.sendEmbed(help_embed)
-        console.log('score');
-    }
-
-});
 
 
 
