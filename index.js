@@ -3,7 +3,7 @@ const bot = new Discord.Client()
 var prefix = (">"); 
 
 bot.on('message', message => {
-    if (message.content === ">serverinfo"){
+    if (message.content === ">servinfo"){
     let sicon = message.guild.iconURL;
     let serverembed = new Discord.RichEmbed()
     .setDescription("Server Information")
@@ -77,21 +77,6 @@ module.exports.help = {
     
     });
 
-
-bot.on('message', message => {
-    if (message.content === ">candidature"){
-        var help_embed = new Discord.RichEmbed()
-        .setColor('0x6F40A4')
-        .setTitle("▀▄▀▄▀▄▀ Modèle candidature ▀▄▀▄▀▄▀")
-        .addField("Nom Prénom", "Irl")
-        .addField("Age", "Votre age")
-        .addField("Votre spécialiter en développement", "Langague Que vous connaissez")
-        .addField("Horraire de connexion", "du lundi au dimanche")
-    message.channel.sendEmbed(help_embed)
-        console.log('help');
-    }
-
-});
 
 bot.on('message', function(message){
     if (message.content === '>inv'){
