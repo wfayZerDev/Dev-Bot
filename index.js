@@ -115,10 +115,10 @@ bot.on('message', message => {
         var help_embed = new Discord.RichEmbed()
         .setColor("#15f153")
         .setTitle("|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| Liste des 4 équipes |̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| ")
-        .addField("équipe 1", "-> [WR] GuilucGaming_YT | dragowx | spyrauw")
+        .addField("équipe 1", "-> [WR] GuilucGaming_YT | dragowx")
         .addField("équipe 2", "-> _DarkMister_ | AƵƳ ")
         .addField("équipe 3", "-> LURZU")
-        .addField("équipe 4", "-> ItsMeForca | itsclose")
+        .addField("équipe 4", "-> ItsMeForca | itsclose | spyrauw")
     message.channel.sendEmbed(help_embed)
         console.log('team');
     }
