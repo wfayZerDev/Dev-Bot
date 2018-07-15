@@ -132,7 +132,7 @@ bot.on('message', message => {
         .setColor("#15f153")
         .setTitle("|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| Score |̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| ")
         .addField("France", "-> 2")
-        .addField("Croathie", "-> 1")
+        .addField("Croatie", "-> 1")
     message.channel.sendEmbed(help_embed)
         console.log('score');
     }
