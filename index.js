@@ -19,7 +19,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-    if (message.content === ">help"){
+    if (message.content === ">servinfo"){
     let sicon = message.guild.iconURL;
     let serverembed = new Discord.RichEmbed()
     .setDescription("Server Information")
@@ -140,21 +140,6 @@ bot.on('message', message => {
         .addField("Bot By fayZer", "Site : dev-store.fr ")
     message.channel.sendEmbed(help_embed)
         console.log('help');
-    }
-
-});
-
-bot.on('message', message => {
-    if (message.content === ">team"){
-        var help_embed = new Discord.RichEmbed()
-        .setColor("#15f153")
-        .setTitle("|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| Liste des 4 équipes |̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| ")
-        .addField("équipe 1", "-> [WR] GuilucGaming_YT | dragowx")
-        .addField("équipe 2", "-> _DarkMister_ | AƵƳ ")
-        .addField("équipe 3", "-> LURZU")
-        .addField("équipe 4", "-> ItsMeForca | itsclose | spyrauw")
-    message.channel.sendEmbed(help_embed)
-        console.log('team');
     }
 
 });
