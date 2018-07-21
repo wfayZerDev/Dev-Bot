@@ -18,25 +18,10 @@ bot.on('message', message => {
 });
 
 
-bot.on('message', message => {
-    if (message.content === ">servinfo"){
-    let sicon = message.guild.iconURL;
-    let serverembed = new Discord.RichEmbed()
-    .setDescription("Server Information")
-    .setColor("#15f153")
-    .setThumbnail(sicon)
-    .addField("Help list", message.guild.name)
-    .addField("Crée Le", message.guild.createdAt)
-    .addField("Membres Total", message.guild.memberCount);
-
-    message.channel.send(serverembed);
-}
-});
-
 
 
 bot.on('message', message => {
-  if (message.content === 'ping') {
+  if (message.content === '>ping') {
     message.reply('pong !')
   }
 })
