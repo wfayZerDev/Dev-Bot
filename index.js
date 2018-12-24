@@ -51,7 +51,7 @@ module.exports.help = {
   
 
     bot.on('ready', () => {
-        bot.user.setPresence({ game: { name: '[>help] | By fayZerSV', type: 0} });
+        bot.user.setPresence({ game: { name: '[>help] | By fayZerDV', type: 0} });
     
     });
 
