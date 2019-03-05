@@ -72,6 +72,17 @@ bot.on('message', message => {
 
 
 
+bot.on('message', message => {
+    if (message.content === ">help"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#15f153")
+        .setTitle("IP SERVER : XXX.XXX.XXX")
+    message.channel.sendEmbed(help_embed)
+        console.log('help');
+    }
+
+});
+
 
 
 
