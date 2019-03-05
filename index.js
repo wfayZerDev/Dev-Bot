@@ -21,8 +21,8 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content === '>ping') {
-    message.reply('pong !')
+  if (message.content === '>site') {
+    message.reply('en développement.')
   }
 })
 
