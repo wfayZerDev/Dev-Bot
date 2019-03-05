@@ -67,10 +67,10 @@ bot.on('message', message => {
     if (message.content === ">help"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#15f153")
-        .setTitle("|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| Liste des commandes |̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| ")
-        .addField("!fm shop", "->afficher le shop du jour")
+        .setTitle("|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| Liste des commandes |̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| ")
+        .addField(">postuler", "->tout les infos pour postuler.")
         .addField(">site", "-> dev-store.fr/fayzer/")
-        .addField(">staff", "-> Administrateur : fayZerDV")
+        .addField(">staff", "-> Toutes notres équipes.")
         .addField("Bot By fayZer", "Insta : LilianSLC")
     message.channel.sendEmbed(help_embed)
         console.log('help');
