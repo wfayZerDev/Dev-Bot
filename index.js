@@ -19,14 +19,6 @@ bot.on('message', message => {
 
 
 
-
-bot.on('message', message => {
-  if (message.content === '>site') {
-    message.reply('en développement.')
-  }
-})
-
-
 bot.on('message', message => {
     if (message.content === ">botinfo"){
     let bicon = bot.user.displayAvatarURL;
@@ -58,7 +50,7 @@ module.exports.help = {
 
 bot.on('message', function(message){
     if (message.content === '>site'){
-        message.reply('💻  Le site est : dev-store.fr/ 💻')
+        message.reply('💻  Le site est : En dev... 💻')
     }
 })   
 
