@@ -86,7 +86,17 @@ bot.on('message', message => {
     }
 
 });
+bot.on('message', message => {
+    if (message.content === ">postuler"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#15f153")
+        .setTitle("Url -> www.XXXXXXXX.com")
+        .addField("requis", "Minimum 50H de jeux")
+    message.channel.sendEmbed(help_embed)
+        console.log('help');
+    }
 
+});
 
 
 
