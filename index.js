@@ -53,7 +53,11 @@ bot.on('message', function(message){
         message.reply('💻  Le site est : En dev... 💻')
     }
 })   
-
+bot.on('message', function(message){
+    if (message.content === '>test'){
+        message.reply('test all true')
+    }
+})  
 
 bot.on('message', message => {
     if (message.content === ">help"){
