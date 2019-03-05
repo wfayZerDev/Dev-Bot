@@ -73,7 +73,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-    if (message.content === ">help"){
+    if (message.content === ">ip"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#15f153")
         .setTitle("IP SERVER : XXX.XXX.XXX")
