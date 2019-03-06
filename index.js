@@ -87,10 +87,10 @@ bot.on('message', message => {
         var help_embed = new Discord.RichEmbed()
         .setColor("#15f153")
         .setTitle("www.XXXXXXXX.com")
-        .addfield("Minimum 14ans", "")
-        .addfield("Avoir au minimum + de 24H de jeux", "")
+        .addfield("Minimum 14ans", ".")
+        .addfield("Avoir au minimum + de 24H de jeux", ".")
     message.channel.sendEmbed(help_embed)
-        console.log('help');
+        console.log('postuler');
     }
 
 });
