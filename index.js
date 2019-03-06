@@ -100,7 +100,7 @@ bot.on('message', message => {
 
 bot.on('message', function(message){
     if (message.content === '>test'){
-        message.reply('Beta Online')
+        message.reply('Beta Onlinebeta')
     }
 })  
 
