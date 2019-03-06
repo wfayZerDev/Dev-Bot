@@ -106,24 +106,6 @@ bot.on('message', function(message){
 
 
 
-if (message.content.startswith(prefix + "sondage")){
-    let args = message.content.split(" ").slice(1);
-    let thingToEcho = args.join(" ")
-    var embed = new discord.RichEmbed()
-    .setDescription("sondage")
-    .addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
-    .setColor("0xB40404")
-     message.guild.channel.find("name", "sondage").sendEmbed(embed)
-     .then(function (message) {
-         message.react("✔")
-         message.react("✗")
-    }).catch(function () {
-    });
-    }else{
-         return message.reply("Tu n'as pas la permission.")
-    }
-
-
 
 
 
