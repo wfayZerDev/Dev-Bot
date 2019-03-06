@@ -55,7 +55,7 @@ bot.on('message', function(message){
 })   
 bot.on('message', function(message){
     if (message.content === '>test'){
-        message.reply('test all true')
+        message.reply('test all truexxx')
     }
 })  
 
