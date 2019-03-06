@@ -99,7 +99,7 @@ bot.on('message', message => {
 
 bot.on('message', function(message){
     if (message.content === '>test'){
-        message.reply('Bot ON')
+        message.reply('Bot ONLINE')
     }
 })  
 
