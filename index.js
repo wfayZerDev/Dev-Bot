@@ -86,9 +86,10 @@ bot.on('message', message => {
     if (message.content === ">postuler"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#15f153")
-        .setTitle("www.XXXXXXXX.com")
-        .addfield("Minimum 14ans", ".")
-        .addfield("Avoir au minimum + de 24H de jeux", ".")
+        .setTitle("-->   wwww.XXXXX.com  <--")
+        .addField("Avoir un minimum d'heure de jeux", "environ 24H minimum.")
+        .addField("Un age adequate", "Minimum 14ans.")
+        .addField("Connaitre un minium", "le staff, les regles, etc...")
     message.channel.sendEmbed(help_embed)
         console.log('postuler');
     }
@@ -99,7 +100,7 @@ bot.on('message', message => {
 
 bot.on('message', function(message){
     if (message.content === '>test'){
-        message.reply('Bot ONLINE')
+        message.reply('Bot ONLINEeeee')
     }
 })  
 
