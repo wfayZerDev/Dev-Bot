@@ -89,7 +89,7 @@ bot.on('message', message => {
         .setTitle("-->   wwww.XXXXX.com  <--")
         .addField("Avoir un minimum d'heure de jeux", "environ 24H minimum.")
         .addField("Un age adequate", "Minimum 14ans.")
-        .addField("Connaitre un minium", "le staff, les regles, etc...")
+        .addField("Connaitre un minium le serveur", "le staff, les regles, etc...")
     message.channel.sendEmbed(help_embed)
         console.log('postuler');
     }
