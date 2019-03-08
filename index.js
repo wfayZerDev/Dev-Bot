@@ -58,14 +58,17 @@ bot.on('message', function(message){
 bot.on('message', message => {
     if (message.content === ">help"){
         var help_embed = new Discord.RichEmbed()
+        .setTitle("Server Information")
+        .setDescription("Le prefix du bot est [>]")
+        .setFooter("Bot By fayZerDV")
         .setColor("#15f153")
-        .setTitle("|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| Liste des commandes |̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| ")
+        .setTitle("»»————- Liste des commandes ————-««")
         .addField(">postuler", "->tout les infos pour postuler.")
         .addField(">site", "-> dev-store.fr/fayzer/")
         .addField(">staff", "-> Toutes notres équipes.")
-        .addField("Bot By fayZer", "Insta : LilianSLC")
-    message.channel.sendEmbed(help_embed)
-        console.log('help');
+        message.channel.sendMessage("Liste des commandes envoyé en privé")
+        message.author.sendEmbed(help_embed)
+        console.log('commande aide demander');
     }
 
 });
