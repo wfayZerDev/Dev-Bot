@@ -106,7 +106,20 @@ bot.on('message', function(message){
 
 
 
+bot.on('message', message => {
+    if (message.content === ">Info"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#15f153")
+        .setTitle("┏━━━━━━┛ Information sur le serveur ┗━━━━━━┓ ")
+        .addField("Fondateur", "-> MrFriman - FayZerDV")
+        .addField("Développeur", "-> Yuki - ユキ - FayZerDV")
+        .addField(">staff", " NUL")
+        .addField("Recrutement de staff [ON]", "Modérateur, Helpeur, Builder")
+    message.channel.sendEmbed(help_embed)
+        console.log('info');
+    }
 
+});
 
 
 
