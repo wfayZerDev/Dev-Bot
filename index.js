@@ -12,8 +12,6 @@ bot.on('message', message => {
     .addField("Nom Du Server", message.guild.name)
     .addField("Crée Le", message.guild.createdAt)
     .addField("Membres Total", message.guild.memberCount);
-
-    message.channel.send(serverembed);
 }
 });
 
@@ -27,8 +25,6 @@ bot.on('message', message => {
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
     .addField("Crée par", "fayZerDv");
-
-    message.channel.send(botembed);
 }
 });
 module.exports.help = {
