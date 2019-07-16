@@ -111,7 +111,8 @@ bot.on('message', message => {
         .addField("💈Date💈", "-> XX/XX/XXXX")
         .addField("🔓Inscription🔓", "-> MP à @Lucius  ou @MrFriman  !")
         .addField("⌛️ Pour les Absents⌛️ ", "-> Contacter a l'avance")
-        .addField("🧾Scénario🧾", "-> Diamond limite" "-> Cut clean")
+        .addField("🧾Scénario🧾", "-> Diamond limite")
+        .addField("-> Cut clean", "Le staff")
     message.channel.sendEmbed(help_embed)
         console.log('info');
     }
