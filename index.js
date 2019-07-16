@@ -103,7 +103,16 @@ bot.on('message', message => {
 
 bot.on('message', function(message){
     if (message.content === '>test'){
-        message.reply('Beta Onlinebetaaaaaa')
+        message.reply('```diff
+-  ⚠️⚠️PRIVATE GAME⚠️⚠️
+
+- 💈 Date : XX/XX/XXXX💈
+
+
+``````md
+[Pour ceux qui veulent s’inscrire allez voir voir @Lucius  ou @MrFriman  !](LG UHC CLASSIQUE)
+
+```')
     }
 })  
 
