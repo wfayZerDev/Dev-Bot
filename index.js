@@ -2,6 +2,15 @@ const Discord = require('discord.js');
 const bot = new Discord.Client()
 var prefix = (">"); 
 
+module.exports.help = {
+  name:"botinfo"
+}
+
+module.exports.help = {
+  name:"serverinfo"
+}
+
+
 bot.on('message', message => {
     if (message.content === ">servinfo"){
     let sicon = message.guild.iconURL;
@@ -14,13 +23,6 @@ bot.on('message', message => {
     .addField("Membres Total", message.guild.memberCount);
 }
 });
-module.exports.help = {
-  name:"botinfo"
-}
-
-module.exports.help = {
-  name:"serverinfo"
-}
 
 
 
