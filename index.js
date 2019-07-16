@@ -31,7 +31,7 @@ bot.on('message', message => {
   
 
     bot.on('ready', () => {
-        bot.user.setPresence({ game: { name: '[>help] | By fayZerDV', type: 0} });
+        bot.user.setPresence({ game: { name: '[>help] | By fayZerDV-', type: 0} });
     
     });
 
@@ -61,7 +61,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-    if (message.content === ">Ftest"){
+    if (message.content === ">Ftamere"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#15f153")
         .setTitle("┏━━━━━━┛ PRIVATE GAME ┗━━━━━━┓ ")
@@ -69,9 +69,6 @@ bot.on('message', message => {
         .addField("🔓Inscription🔓", "-> MP à @Lucius  ou @MrFriman  !")
         .addField("⌛️Pour les Absents⌛️ ", "-> Contacter a l'avance")
         .addField("🧾Scénario🧾", "-> Diamond limite")
-        .addField("🛠Config🛠", "-> 🎲Rôles : 12 minutes🎲")
-        .AddField("⚔️PvP⚔️", "-> 🔮15 minutes🔮")
-        .AddField("❤️FinalHeal❤️ (manuel)" , "-> 🔮15 minutes🔮")
     message.channel.sendEmbed(help_embed)
         console.log('info');
     }
