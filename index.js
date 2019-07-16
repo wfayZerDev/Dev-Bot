@@ -2,42 +2,6 @@ const Discord = require('discord.js');
 const bot = new Discord.Client()
 var prefix = (">"); 
 
-module.exports.help = {
-  name:"botinfo"
-}
-
-module.exports.help = {
-  name:"serverinfo"
-}
-
-
-bot.on('message', message => {
-    if (message.content === ">servinfo"){
-    var help_embed = new Discord.RichEmbed()
-    .setDescription("Server Information")
-    .setColor("#15f153")
-    .setThumbnail(sicon)
-    .addField("Nom Du Server", message.guild.name)
-    .addField("Crée Le", message.guild.createdAt)
-    .addField("Membres Total", message.guild.memberCount);
-}
-});
-
-
-
-
-
-bot.on('message', message => {
-    if (message.content === ">botinfo"){
-    let bicon = bot.user.displayAvatarURL;
-    let botembed = new Discord.RichEmbed()
-    .setDescription("Bot Information")
-    .setColor("#15f153")
-    .setThumbnail(bicon)
-    .addField("Bot Name", bot.user.username)
-    .addField("Crée par", "fayZerDv");
-}
-});
 
   
 
