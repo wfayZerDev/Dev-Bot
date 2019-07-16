@@ -47,11 +47,6 @@ module.exports.help = {
     });
 
 
-bot.on('message', function(message){
-    if (message.content === '>site'){
-        message.reply('💻  Le site est : En dev... 💻')
-    }
-})   
 
 
 bot.on('message', message => {
@@ -68,32 +63,6 @@ bot.on('message', message => {
         message.channel.sendMessage("Liste des commandes envoyé en privé")
         message.author.sendEmbed(help_embed)
         console.log('commande aide demander');
-    }
-
-});
-
-
-
-bot.on('message', message => {
-    if (message.content === ">ip"){
-        var help_embed = new Discord.RichEmbed()
-        .setColor("#15f153")
-        .setTitle("IP SERVER : XXX.XXX.XXX")
-    message.channel.sendEmbed(help_embed)
-        console.log('help');
-    }
-
-});
-bot.on('message', message => {
-    if (message.content === ">postuler"){
-        var help_embed = new Discord.RichEmbed()
-        .setColor("#15f153")
-        .setTitle("-->   wwww.XXXXX.com  <--")
-        .addField("Avoir un minimum d'heure de jeux", "environ 24H minimum.")
-        .addField("Un age adequate", "Minimum 14ans.")
-        .addField("Connaitre un minium le serveur", "le staff, les regles, etc...")
-    message.channel.sendEmbed(help_embed)
-        console.log('postuler');
     }
 
 });
