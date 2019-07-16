@@ -37,6 +37,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === ">Ftamere"){
+      if(message.author.id == "403249416225423362")
         var help_embed = new Discord.RichEmbed()
         .setColor("#15f153")
         .setTitle("┏━━━━━━┛ PRIVATE GAME ┗━━━━━━┓ ")
