@@ -70,7 +70,7 @@ bot.on('message', message => {
         .addField("⌛️Pour les Absents⌛️ ", "-> Contacter a l'avance")
         .addField("🧾Scénario🧾", "-> Diamond limite")
         .addField("🛠Config🛠", "-> 🎲Rôles : 12 minutes🎲")
-        .AddField("⚔️PvP⚔️", "-> 🔮15 minutes🔮")
+        .AddField("PvP", "-> 🔮15 minutes🔮")
     message.channel.sendEmbed(help_embed)
         console.log('info');
     }
