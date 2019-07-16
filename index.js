@@ -109,9 +109,11 @@ bot.on('message', message => {
         .setTitle("┏━━━━━━┛ PRIVATE GAME ┗━━━━━━┓ ")
         .addField("💈Date💈", "-> XX/XX/XXXX",)
         .addField("🔓Inscription🔓", "-> MP à @Lucius  ou @MrFriman  !")
-        .addField("⌛️ Pour les Absents⌛️ ", "-> Contacter a l'avance")
+        .addField("⌛️Pour les Absents⌛️ ", "-> Contacter a l'avance")
         .addField("🧾Scénario🧾", "-> Diamond limite")
-        .addField("-> Cut clean", "Le staff")
+        .addField("🛠Config🛠", "-> 🎲Rôles : 12 minutes🎲")
+        .AddField("⚔️PvP⚔️", "-> 🔮15 minutes🔮")
+        .AddField("❤️FinalHeal❤️ (manuel)" , "-> 🔮15 minutes🔮")
     message.channel.sendEmbed(help_embed)
         console.log('info');
     }
