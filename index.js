@@ -13,7 +13,7 @@ module.exports.help = {
 
 bot.on('message', message => {
     if (message.content === ">servinfo"){
-    let sicon = message.guild.iconURL;
+    var embed = new Discord.RichEmbed()
     let serverembed = new Discord.RichEmbed()
     .setDescription("Server Information")
     .setColor("#15f153")
