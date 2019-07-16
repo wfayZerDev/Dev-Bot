@@ -27,13 +27,6 @@ bot.on('message', message => {
     .addField("Crée par", "fayZerDv");
 }
 });
-module.exports.help = {
-  name:"botinfo"
-}
-
-module.exports.help = {
-  name:"serverinfo"
-}
 
   
 
@@ -85,6 +78,12 @@ bot.on('message', message => {
 
 });
 
+module.exports.help = {
+  name:"botinfo"
+}
 
+module.exports.help = {
+  name:"serverinfo"
+}
 
 bot.login(process.env.TOKEN);
