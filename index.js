@@ -13,8 +13,7 @@ module.exports.help = {
 
 bot.on('message', message => {
     if (message.content === ">servinfo"){
-    var embed = new Discord.RichEmbed()
-    let serverembed = new Discord.RichEmbed()
+    var help_embed = new Discord.RichEmbed()
     .setDescription("Server Information")
     .setColor("#15f153")
     .setThumbnail(sicon)
