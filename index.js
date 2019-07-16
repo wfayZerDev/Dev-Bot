@@ -27,7 +27,7 @@ bot.on('message', message => {
     .setColor("#15f153")
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
-    .addField("Crée par", "fayZer");
+    .addField("Crée par", "fayZerDv");
 
     message.channel.send(botembed);
 }
