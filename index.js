@@ -108,7 +108,7 @@ bot.on('message', message => {
         var help_embed = new Discord.RichEmbed()
         .setColor("#15f153")
         .setTitle("┏━━━━━━┛ PRIVATE GAME ┗━━━━━━┓ ")
-        .addField("💈Date💈", "-> XX/XX/XXXX", true)
+        .addField("💈Date💈", "-> XX/XX/XXXX",)
         .addField("🔓Inscription🔓", "-> MP à @Lucius  ou @MrFriman  !")
         .addField("⌛️ Pour les Absents⌛️ ", "-> Contacter a l'avance")
         .addField("🧾Scénario🧾", "-> Diamond limite")
