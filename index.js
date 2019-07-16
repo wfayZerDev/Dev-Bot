@@ -70,6 +70,7 @@ bot.on('message', message => {
         .addField("⌛️Pour les Absents⌛️ ", "-> Contacter a l'avance")
         .addField("🧾Scénario🧾", "-> Diamond limite")
         .addField("🛠Config🛠", "-> 🎲Rôles : 12 minutes🎲")
+        .AddField("test" , "NTM")
     message.channel.sendEmbed(help_embed)
         console.log('info');
     }
