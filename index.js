@@ -14,6 +14,28 @@ bot.on('message', message => {
     .addField("Membres Total", message.guild.memberCount);
 }
 });
+module.exports.help = {
+  name:"botinfo"
+}
+
+module.exports.help = {
+  name:"serverinfo"
+}
+
+bot.on('message', message => {
+    if (message.content === ">Ftamere"){
+        message.channel.send(
+        test
+        
+        
+        
+        )
+    }
+
+});
+
+
+
 
 
 bot.on('message', message => {
@@ -69,20 +91,12 @@ bot.on('message', message => {
         .addField("🔓Inscription🔓", "-> MP à @Lucius  ou @MrFriman  !")
         .addField("⌛️Pour les Absents⌛️ ", "-> Contacter a l'avance")
         .addField("🧾Scénario🧾", "-> Diamond limite")
-        .addField("🛠Config🛠", "-> 🎲Rôles : 12 minutes🎲")
-        .AddField("test" , "NTM")
     message.channel.sendEmbed(help_embed)
         console.log('info');
     }
 
 });
 
-module.exports.help = {
-  name:"botinfo"
-}
 
-module.exports.help = {
-  name:"serverinfo"
-}
 
 bot.login(process.env.TOKEN);
