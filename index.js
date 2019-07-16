@@ -101,32 +101,17 @@ bot.on('message', message => {
 
 
 
-bot.on('message', function(message){
-    if (message.content === '>test'){
-        message.reply('```diff
--  ⚠️⚠️PRIVATE GAME⚠️⚠️
-
-- 💈 Date : XX/XX/XXXX💈
-
-
-``````md
-[Pour ceux qui veulent s’inscrire allez voir voir @Lucius  ou @MrFriman  !](LG UHC CLASSIQUE)
-
-```')
-    }
-})  
-
 
 
 bot.on('message', message => {
-    if (message.content === ">Info"){
+    if (message.content === ">Ftest"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#15f153")
-        .setTitle("┏━━━━━━┛ Information sur le serveur ┗━━━━━━┓ ")
-        .addField("Fondateur", "-> MrFriman - FayZerDV")
-        .addField("Développeur", "-> Yuki - ユキ - FayZerDV")
-        .addField(">staff", " NUL")
-        .addField("Recrutement de staff [ON]", "Modérateur, Helpeur, Builder")
+        .setTitle("┏━━━━━━┛ PRIVATE GAME ┗━━━━━━┓ ")
+        .addField("💈Date💈", "XX/XX/XXXX")
+        .addField("Inscription", "-> MP à @Lucius  ou @MrFriman  !")
+        .addField("Pour les ABS", " Contacter a l'avance")
+        .addField("Scénario", "Fait sur place")
     message.channel.sendEmbed(help_embed)
         console.log('info');
     }
