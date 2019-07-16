@@ -22,18 +22,6 @@ module.exports.help = {
   name:"serverinfo"
 }
 
-bot.on('message', message => {
-    if (message.content === ">Ftamere"){
-        message.channel.send(
-        test
-        
-        
-        
-        )
-    }
-
-});
-
 
 
 
