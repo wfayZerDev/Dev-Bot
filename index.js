@@ -110,7 +110,7 @@ bot.on('message', message => {
         .setTitle("┏━━━━━━┛ PRIVATE GAME ┗━━━━━━┓ ")
         .addField("💈Date💈", "-> XX/XX/XXXX")
         .addField("🔓Inscription🔓", "-> MP à @Lucius  ou @MrFriman  !")
-        .addField("⌛️ Pour les ABS⌛️ ", "-> Contacter a l'avance")
+        .addField("⌛️ Pour les Absents⌛️ ", "-> Contacter a l'avance")
         .addField("🧾Scénario🧾", "-> Fait sur place")
     message.channel.sendEmbed(help_embed)
         console.log('info');
