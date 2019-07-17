@@ -6,7 +6,7 @@ var prefix = (">");
   
 
     bot.on('ready', () => {
-        bot.user.setPresence({ game: { name: '[>help] | By fayZerDV-', type: 0} });
+        bot.user.setPresence({ game: { name: '[>help] | By fayZerDV', type: 0} });
     
     });
 
@@ -21,7 +21,7 @@ bot.on('message', message => {
         .setFooter("Bot By fayZerDV")
         .setColor("#15f153")
         .setTitle("»»————- Liste des commandes ————-««")
-        .addField(">serv", "->Ip du host")
+        .addField(">serv", "-> Ip du host")
         .addField(">inscription", "-> Tout pour s'inscrire")
         .addField(">host", "-> Date du prochain Host : XX/XX/XXXX")
         .addField(">staff", "-> Toutes notres équipes.")
@@ -51,6 +51,36 @@ bot.on('message', message => {
     }
 
 });
+
+
+
+bot.on('message', message => {
+    if (message.content === ">F"){
+        var help_embed = new Discord.RichEmbed()
+        .setTitle("Channel Test")
+        .setDescription("Le prefix du bot est [>]")
+        .setFooter("Bot By fayZerDV")
+        .setColor("#15f153")
+        .setTitle("»»————- Liste des commandes ————-««")
+        .addField("test", "test")
+        message.author.sendEmbed(help_embed)
+        console.log('commande channel demander');
+    }
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
