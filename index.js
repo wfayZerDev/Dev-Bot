@@ -70,10 +70,10 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-if (message.content === '>fruits') {
-	message.react('🍎');
-	message.react('🍊');
-	message.react('🍇');
+if (message.content === '>vote') {
+	message.react('✅');
+	message.react('❌');
+	message.react('🎲');
 }
 
 });
