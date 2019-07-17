@@ -60,7 +60,7 @@ bot.on('message', message => {
         var help_embed = new Discord.RichEmbed()
         .setColor("#15f153")
         .setTitle("┏━━━━━━┛ PRIVATE GAME [ON] ┗━━━━━━┓ ")
-        .addField("💈La partie est ouverte💈", "Vous pouvez rejoindre")
+        .addField("💈La partie est ouverte💈", "Vous pouvez rejoindre", true)
     message.channel.sendEmbed(help_embed)
         console.log('game');
     }
