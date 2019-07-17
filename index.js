@@ -52,8 +52,8 @@ bot.on('message', message => {
 
 });
 
-
 bot.on('message', message => {
+    if (message.content === ">Ftest"){
       if(message.author.id == "403249416225423362", "261234611915325440", "357559338010673154")
         var help_embed = new Discord.RichEmbed()
             color: 3447003,
