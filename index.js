@@ -54,7 +54,7 @@ bot.on('message', message => {
 
 
       bot.on('message', message => {
-        if(message.content === ">Ftest"){
+        if(message.content.startsWith(prefix + "Ftest")) {
 
                 var args = message.content.split(" ").slice(1);
                 var msge = args.join(' ');
