@@ -53,9 +53,8 @@ bot.on('message', message => {
 });
 
 
-
-
-            if(message.content.startsWith(prefix + "Ftest")) {
+      bot.on('message', message => {
+        if(message.content === ">Ftest"){
 
                 var args = message.content.split(" ").slice(1);
                 var msge = args.join(' ');
@@ -72,7 +71,7 @@ bot.on('message', message => {
                 message.guild.members.map(m => m.send(mpall))
             }
 
-
+      });
 
 
 
