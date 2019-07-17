@@ -63,7 +63,7 @@ bot.on('message', message => {
         .setColor("#15f153")
         .setTitle("»»————- Liste des commandes ————-««")
         .addField("test", "test")
-        message.author.sendEmbed(help_embed)
+        message.guild.channels.find("name", "test").sendEmbed(embed)
         console.log('commande channel demander');
     }
 
