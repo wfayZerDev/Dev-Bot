@@ -37,7 +37,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-    if (message.content === ">Ftamere"){
+    if (message.content === ">Fhost"){
       if(message.author.id == "403249416225423362")
         var help_embed = new Discord.RichEmbed()
         .setColor("#15f153")
@@ -48,23 +48,6 @@ bot.on('message', message => {
         .addField("🧾Scénario🧾", "-> Diamond limite")
     message.channel.sendEmbed(help_embed)
         console.log('info');
-    }
-
-});
-
-
-
-bot.on('message', message => {
-    if (message.content === ">F"){
-        var help_embed = new Discord.RichEmbed()
-        .setTitle("Channel Test")
-        .setDescription("Le prefix du bot est [>]")
-        .setFooter("Bot By fayZerDV")
-        .setColor("#15f153")
-        .setTitle("»»————- Liste des commandes ————-««")
-        .addField("test", "test")
-        message.author.sendEmbed("name", "test")
-        console.log('commande channel demander');
     }
 
 });
