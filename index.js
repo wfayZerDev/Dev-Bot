@@ -38,7 +38,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === ">Fhost"){
-      if(message.author.id == "403249416225423362")
+      if(message.author.id == "403249416225423362", "261234611915325440", "357559338010673154")
         var help_embed = new Discord.RichEmbed()
         .setColor("#15f153")
         .setTitle("┏━━━━━━┛ PRIVATE GAME ┗━━━━━━┓ ")
