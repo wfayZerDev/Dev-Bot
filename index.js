@@ -21,10 +21,11 @@ bot.on('message', message => {
         .setFooter("Bot By fayZerDV")
         .setColor("#15f153")
         .setTitle("»»————- Liste des commandes ————-««")
-        .addField(">postuler", "->tout les infos pour postuler.")
-        .addField(">site", "-> dev-store.fr/fayzer/")
+        .addField(">serv", "->Ip du host")
+        .addField(">inscription", "-> Tout pour s'inscrire")
+        .addField(">host", "-> Date du prochain Host : XX/XX/XXXX")
         .addField(">staff", "-> Toutes notres équipes.")
-        message.channel.sendMessage("Liste des commandes envoyé en privé")
+        message.channel.sendMessage(" ▶️ Liste des commandes envoyé en privé ◀️")
         message.author.sendEmbed(help_embed)
         console.log('commande aide demander');
     }
