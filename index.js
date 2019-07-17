@@ -52,6 +52,18 @@ bot.on('message', message => {
 
 });
 
+bot.on('message', message => {
+    if (message.content === ">FM"){
+      if(message.author.id == "403249416225423362", "261234611915325440", "357559338010673154")
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#15f153")
+        .setTitle("┏━━━━━━┛ MrFriman Dictateur ┗━━━━━━┓ ")
+        .addField("💈Abonnez vous !💈", "Help me", true)
+    message.channel.sendEmbed(help_embed)
+        console.log('game');
+    }
+
+});
 
 
 bot.on('message', message => {
