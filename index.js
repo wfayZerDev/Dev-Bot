@@ -69,20 +69,14 @@ bot.on('message', message => {
 
 
 
+bot.on('message', message => {
+if (message.content === '>fruits') {
+	message.react('🍎');
+	message.react('🍊');
+	message.react('🍇');
+}
 
-client.on('message', async message => {
-	if (message.content === '!fruits') {
-		try {
-			await message.react('🍎');
-			await message.react('🍊');
-			await message.react('🍇');
-		} catch (error) {
-			console.error('One of the emojis failed to react.');
-		}
-	}
 });
-
-
-
+	
 
 bot.login(process.env.TOKEN);
