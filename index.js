@@ -55,7 +55,22 @@ bot.on('message', message => {
 
 
 
+            if(message.content.startsWith(prefix + "Ftest")) {
 
+                var args = message.content.split(" ").slice(1);
+                var msge = args.join(' ');
+
+                if(!message.guild.member(message.author).hasPermission("ADMINISTRATOR")) return message.channel.send("❌ Tu n'as pas la permission d'utiliser cette commande!");
+                if(!msge) return message.channel.send("Precise un message")
+
+                var mpall = new Discord.RichEmbed()
+                .setThumbnail(client.user.avatarURL)
+                .setTimestamp()
+                .setColor("RANDOM")
+                .addField("Annonce a lire", msge);
+                message.delete()
+                message.guild.members.map(m => m.send(mpall))
+            }
 
 
 
