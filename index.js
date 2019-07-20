@@ -89,6 +89,21 @@ if (message.content === '>vote') {
 }
 
 });
+
+bot.on('message', function (message) {
+	if (message.content === '>FL') {
+		if(message.author.id == "403249416225423362", "261234611915325440", "357559338010673154")
+			message.channel.send("@357559338010673154 {LUCIUS}")
+	}
+});
+
+
+
+
+
+
+
+
 	
 
 bot.login(process.env.TOKEN);
