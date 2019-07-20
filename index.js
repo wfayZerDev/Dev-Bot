@@ -34,6 +34,19 @@ bot.on('message', message => {
 
 
 
+bot.on('message', message => {
+    if (message.content === ">FV"){
+      if(message.author.id == "403249416225423362", "261234611915325440", "357559338010673154")
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#15f153")
+        .setTitle("┏━━━━━━┛ MrFriman SVP ┗━━━━━━┓ ")
+        .addField("💈Aidez-nous💈", "-> SVP des dons")
+        .addField("🔓Send🔓", "-> Host")
+    message.channel.sendEmbed(help_embed)
+        console.log('info');
+    }
+
+});
 
 
 bot.on('message', message => {
